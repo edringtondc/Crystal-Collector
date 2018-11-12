@@ -4,16 +4,19 @@ $(document).ready(function () { //wait until page is loaded completely
     //wins, loses, goalNumber, userScore
     var wins = 0;
     var loses = 0;
-    var goalNumber = Math.floor(Math.random() * 120) + 1;
+    var goalNumber = Math.floor(Math.random() * 120) + 1;;
     var collectedValue = 0;
 
     //functions:
     //set goalNumber
     function setGoal(){
+        goalNumber = Math.floor(Math.random() * 120) + 1;
         $("#goal").text(goalNumber);
+
 
     } 
     setGoal();
+ 
 
     //with Math.random 1-120
 
@@ -24,7 +27,7 @@ $(document).ready(function () { //wait until page is loaded completely
 
         console.log("addCrystals called")
 
-        var images = ["assets/images/bluegem.jpg", "assets/images/greengem.jpg", "assets/images/orangegem.jpg", "assets/images/redgem.jpg"]
+        var images = ["assets/images/bluegem.png", "assets/images/greengem.jpg", "assets/images/orangegem.jpg", "assets/images/redgem.png"]
 
         //for loop 
         for (var i = 0; i < images.length; i++) {
@@ -36,16 +39,10 @@ $(document).ready(function () { //wait until page is loaded completely
 
         }
 
-        //     //attach attr src
-        //     //attach class
-        //     //add crystal value as attr
-        //     //append
-
-
     }
 
     function changeCrystalVal() {
-        $(Math.floor(Math.random() * 12) + 1).attr('crystalVal')
+        $(Math.floor(Math.random() * 12) + 1).attr('crystalVal');
 
     }
     //update collectedValue - maybe write a display collected value function
@@ -74,18 +71,22 @@ $(document).ready(function () { //wait until page is loaded completely
     function resetGame(){
         console.log("resetGame called");
         //clear wins and loses
-        wins = 0;
-        loses = 0;
+        $("#wins-text").text(wins);
+        console.log(wins);
+        $("#loss-text").text(loses);
+        console.log(loses);
+        collectedValue = 0;
+        $("#collected").text(collectedValue);
+        
         //new goalNumber
-        goalNumber = Math.floor(Math.random() * 120) + 1;
-
+        setGoal();
+        
         //reset crystalVal
         changeCrystalVal();
     }
 
-
     //function to see current value, and goal number 
-
+   
 $(document).on("click", ".crystal", function(){ //attach event lister to the doc, once the page has loaded
         // console.log(this);
         console.log($(this).attr("crystalVal"));

@@ -27,92 +27,75 @@
 </head>
 
 <body>
-    <h1>Crystal Collector</h1>
 
-    <div class="row">
+    <header>
+        <h1>Crystal Collection Game</h1>
+    </header>
 
-        <div class="jumbotron rules">
-            <div class="container">
-                <h3 class=>Crystal Collector Game Rules</h3>
-                <h3> Rules</h3>
+    <div class="row justify-content-center">
 
-                <h3>more rules</h3>
-                <h3>more rules</h3>
-            </div>
-        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Game Rules</h5>
 
-    </div>
+                <div class="container rules ">
 
-    <div class="row">
-
-        <div class="col-lg-6" id="goal-number">
-
-        </div>
-
-        <div class="col-lg-6" id="wins-loss-box">
-
-        </div>
-
-    </div>
-
-    <div class="row">
-
-        <div id="total-collected col-lg-4">
-            <div class="card">
-                <div class="card-header">
-                    Total Crystals Collected: <span id="collected">0</span>
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <p class="card-text">Goal Number: <span id="goal">?</span></p>
-                    
-                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <p class="card-text">You will be given a random number at the start of the game.</p>
+                    <p>There are four crystals below. By clicking on a crystal you will add a specific calue to your
+                        total
+                        score.</p>
+                    <p>You win the game by matching your total score to the goal number. </p>
+                    <p> You lose the game if your total score goes above the random number.
+                    </p>
+                    <p>The value of each crystal is hidden from you until you click on it.</p>
+                    <p>Each time when the game re-starts, the game will change the values of each crystal.</p>
+               
                 </div>
             </div>
-
         </div>
-        <div class="col-lg-1">
-            <div class="crystal-div">
-            </div>
 
-            
-
-        </div>
-        <div class="col-lg-4">
-                <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <h5 class="card-text message-text"> Collect Crystals </h5>
-
-                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                </div>
-
-            </div>
 
     </div>
 
 
+    <div class="row justify-content-between gameRow">
+
+        <!-- <div class="card-group"> -->
+            <div id="total-collected col-lg-3">
+                <div class="card">
+                    <div class="card-header">
+                        Goal Number: <span id="goal">?</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text collected">Crystals Collected: <span id="collected">---</span></p>
+
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6">
+                <div class="crystal-div justify-content-center">
+                </div>
+
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="card-header"> </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Wins: <span id="wins-text">---</span></h5>
+                        <h5 class="card-title">Loses: <span id="loss-text">---</span></h5>
+
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
 
 
+            </div>
+        <!-- </div> -->
 
-
-    <!-- title-->
-
-    <!-- instructions -->
-
-    <!-- box with goalScore  -->
-
-    <!-- box with wins and losses -->
-
-    <!-- crystal pictures  -->
-
-    <!-- current score calculator -->
-
-
-
-
-
-
-
+    </div>
 
 
 </body>
