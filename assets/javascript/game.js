@@ -107,4 +107,6 @@ $(document).on("click", ".crystal", function(){ //attach event lister to the doc
 
     //  call function to addCrystals();
     addCrystals();
+
 });
+
