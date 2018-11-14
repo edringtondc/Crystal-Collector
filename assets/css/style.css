@@ -8,21 +8,26 @@
 
 body {
     width: 100%;
-    background-image: url("../images/light-grey-terrazzo.png");
+    background-image: url("../images/Cave.jpg");
 }
 
 header {
     width: 100%;
-    background-color: peachpuff;
     text-align: center;
-    color: darkslategray;
+    color: whitesmoke;
 }
 
 .rules {
     width: 100%;
-    
     font-size: 16px;
-}
+ }
+
+ /* .wrapper {
+  
+    background: rgb(200, 54, 54);
+   
+    background: rgba(200, 54, 54, 0.5);
+ } */
 
 .crystal {
 
