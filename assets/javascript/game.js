@@ -22,7 +22,7 @@ $(document).ready(function () { //wait until page is loaded completely
 
         console.log("addCrystals called")
 
-        var images = ["assets/images/bluegem.png", "assets/images/greengem.jpg", "assets/images/orangegem.jpg", "assets/images/redgem.png"]
+        var images = ["assets/images/blue.png", "assets/images/purple.png", "assets/images/topaz.png", "assets/images/sapphire.png"]
 
         //for loop to append images and add random value
         for (var i = 0; i < images.length; i++) {

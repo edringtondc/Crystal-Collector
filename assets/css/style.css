@@ -9,6 +9,8 @@
 body {
     width: 100%;
     background-image: url("../images/Cave.jpg");
+    color:rgb(5, 60, 30);
+    font-size: 20px;
 }
 
 header {
@@ -17,9 +19,13 @@ header {
     color: whitesmoke;
 }
 
+.card { background-color: rgba(245, 245, 245, 0.4); }
+
+.card-header, .card-footer { opacity: 1}
+
 .rules {
     width: 100%;
-    font-size: 16px;
+    font-size: 18px;
  }
 
  /* .wrapper {
@@ -38,12 +44,14 @@ header {
 }
 
 .crystal img{
-    
+    width: 200px;
+    height: 200px;
 }
 
 .gameBoxes {
     width: 300px;
     height: 200px;
+    font-weight: bold;
    
 }
 
