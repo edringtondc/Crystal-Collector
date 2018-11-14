@@ -16,7 +16,7 @@ body {
 header {
     width: 100%;
     text-align: center;
-    color: whitesmoke;
+    color: rgb(3, 82, 49);
 }
 
 .card { background-color: rgba(245, 245, 245, 0.4); }
